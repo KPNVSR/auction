@@ -8,7 +8,7 @@ function Nav() {
       {/* Logo/Brand element */}
       <div className="logo">
         <Link to="/Main" className="logo-link">
-          <img src="https://github.com/YUVARAJMORLA/Sarkaru-Vaari-Paata/blob/main/LOGOaux_main.png?raw=true" />
+          <img src="https://github.com/YUVARAJMORLA/imagesforprofile/blob/main/aux1-removebg-preview.png?raw=true" />
         </Link>
       </div>
 
