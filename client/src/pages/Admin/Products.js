@@ -62,6 +62,9 @@ function Products() {
     {
       title: "Seller",
       dataIndex: "name",
+      render: (text, record)=>{
+      return record.seller.name;
+      },
       // render: (text, record) => {
       //   return record.seller.name;
       // },
