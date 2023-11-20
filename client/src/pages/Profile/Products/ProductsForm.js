@@ -229,19 +229,7 @@ function ProductsForm({
                 />
               </Form.Item>
               {/* Display the timer */}
-
-            </Form>
-          </Tabs.TabPane>
-          <Tabs.TabPane tab="Images" key="2" disabled={!selectedProduct}>
-            <Images
-              selectedProduct={selectedProduct}
-              getData={getData}
-              setShowProductForm={setShowProductForm}
-            />
-          </Tabs.TabPane>
-        </Tabs>
-      </div>
-      <div>
+               <div>
         {/* ...other form items */}
         <Form.Item label="Set Expiry Time">
           <Row gutter={[16, 16]}>
@@ -278,6 +266,17 @@ function ProductsForm({
             Time Left: {remainingTime.days}d {remainingTime.hours}h {remainingTime.minutes}m {remainingTime.seconds}s
           </div>
         )}
+      </div>
+            </Form>
+          </Tabs.TabPane>
+          <Tabs.TabPane tab="Images" key="2" disabled={!selectedProduct}>
+            <Images
+              selectedProduct={selectedProduct}
+              getData={getData}
+              setShowProductForm={setShowProductForm}
+            />
+          </Tabs.TabPane>
+        </Tabs>
       </div>
     </Modal>
   );
