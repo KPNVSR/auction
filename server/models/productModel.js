@@ -49,7 +49,7 @@ const productSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    boxAvailable: {
+    showBidsOnProductPage: {
       type: Boolean,
       default: false,
     },
