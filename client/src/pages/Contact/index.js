@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
-import { FaInstagram, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import {SiGmail} from 'react-icons/si';
 import Nav from '../Navbar/Nav';
 import Footer from '../Navbar/foot';
 
@@ -43,7 +44,7 @@ function Contact() {
     setIsSending(true);
 
     emailjs
-      .sendForm('service_3w6d5ln', 'template_4tmvc4d', form.current, 'CCUGAAHQvQ6_ogWc6')
+      .sendForm('service_c3k2k8r', 'template_4j9dp0t', form.current, 'OhsJUFLhnexv2OR2T')
       .then(
         (result) => {
           console.log(result.text);
@@ -114,16 +115,18 @@ function Contact() {
           <p className="error-message">Email not sent. Please try again later.</p>
         )}
         <div className="contact-social-links">
-          <a href="https://www.linkedin.com/in/yuvaraj-morla-14my" target="_blank" rel="noreferrer">
-            <FaInstagram />
+          <a href="https://www.linkedin.com/in/pranay-kommareddy-10193124a/" target="_blank" rel="noreferrer">
+            <FaLinkedin />
           </a>
-          <a href="https://github.com/YUVARAJMORLA" target="_blank" rel="noreferrer">
+          <a href="https://github.com/KPNVSR" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a href="https://twitter.com/@YuvarajMorla_IN" target="_blank" rel="noreferrer">
-            <FaTwitter />
+          <a href="mailto:pranaykommareddy21@gmail.com" target="_blank" rel="noopener noreferrer">
+            <SiGmail />
           </a>
-
+          <a href="https://instagram.com/kommareddy.subba?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
         </div>
       </div>
       <div>

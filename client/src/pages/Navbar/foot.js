@@ -1,19 +1,20 @@
 import React from 'react';
 import './foot.css';
-import { FaFacebook, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import {SiGmail} from 'react-icons/si';
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="social-icons">
-        <a href="https://github.com/YUVARAJMORLA" target="_blank" rel="noopener noreferrer">
-          <FaFacebook />
+      <a href="https://github.com/KPNVSR" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
         </a>
-        <a href="https://twitter.com/@YuvarajMorla_IN" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
+        <a href="mailto:pranaykommareddy21@gmail.com" target="_blank" rel="noopener noreferrer">
+          <SiGmail />
         </a>
-        <a href="https://www.linkedin.com/in/yuvaraj-morla-14my" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/kommareddy.subba?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
       </div>

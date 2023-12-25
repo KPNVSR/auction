@@ -30,7 +30,8 @@ const removeExpiredProduct = async (productId) => {
     admins.forEach(async (admin) => {
       const newNotification = new Notification({
         user: admin._id,
-        message: `New product added by ${req.user.name}`,
+        // message: `New product added by ${req.user.name}`,
+        message: 'A New product is added',
         title: "New Product",
         onClick: `/admin`,
         read: false,
